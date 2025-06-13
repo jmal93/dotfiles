@@ -13,9 +13,11 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
-			vim.lsp.enable("lua_ls")
-			vim.lsp.enable("clangd")
-			vim.lsp.enable("rust_analyzer", {
+      local lspconfig = require("lspconfig")
+
+      lspconfig.lua_ls.setup({})
+      lspconfig.clangd.setup({})
+      lspconfig.rust_analyzer.setup({
 				settings = {
 					["rust_analyzer"] = {
 						cargo = {
@@ -32,11 +34,15 @@ return {
 					},
 				},
 			})
-			vim.lsp.enable("jdtls")
-			vim.lsp.enable("jsonls")
-			vim.lsp.enable("pylsp")
-			vim.lsp.enable("shellcheck")
-			vim.lsp.enable("lemminx")
+      lspconfig.jdtls.setup({})
+      lspconfig.jsonls.setup({})
+      lspconfig.pylsp.setup({})
+      lspconfig.shellcheck.setup({})
+      lspconfig.qmlls.setup({
+				cmd = { "/usr/lib/qt6/bin/qmlls", "-E" },
+				filetypes = { "qml" },
+			})
+      lspconfig.lemminx.setup({})
 		end,
 		opts = {},
 		keys = {
