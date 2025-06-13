@@ -1,0 +1,27 @@
+* {
+  font-family: Jetbrains Mono Nerd Font;
+  font-size: 13px;
+  font-weight: bold;
+  color: #ebdbb2;
+}
+
+window#waybar {
+  background-color: #242424;
+}
+
+tooltip label {
+  color: white
+}
+
+#workspaces button.active {
+  border-bottom: 4px solid #fff;
+}
+
+#battery.warning {
+  color: #d65d0e;
+}
+
+#battery.critical {
+  color: #cc241d;
+}
+

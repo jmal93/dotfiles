@@ -1,0 +1,72 @@
+{
+	"spacing": 3,
+	"modules-left" : [
+		"hyprland/workspaces"		
+	],
+
+	"modules-center": [
+		"hyprland/window"
+	],
+
+	"modules-right": [
+		"memory",
+		"battery",
+		"network",
+    "bluetooth",
+    "wireplumber",
+		"clock"
+	],
+
+	"hyprland/workspaces": {
+	},
+
+	"hyprland/window": {
+		"format": "{class}",
+        "icon": true
+	},
+
+	"memory": {
+		"format": " \uf538 {}% "
+	},
+
+	"battery": {
+		"bat": "BAT1",
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+		"interval": 1,
+		"format": " {icon} {capacity}% ",
+		"format-charging": "  {icon} {capacity}% ",
+		"format-full": "  {icon} {capacity}% ",
+		"format-critical": " ! {icon} {capacity}% ",
+		"format-icons": ["\uf243", "\uf242", "\uf241", "\uf240"]
+	},
+
+	"network": {
+    "tooltip": true,
+    "format-wifi": "  ",
+		"format-ethernet": "   ",
+		"tooltip-format-wifi": " {essid} ",
+		"tooltip-format-ethernet": " {ipaddr} ",
+    "format-disconnected": "   "
+	},
+
+  "bluetooth": {
+    "tooltip": true,
+    "format": " {status}",
+    "tooltip-format-connected": "{device_alias}"
+  },
+
+  "wireplumber": {
+    "format": "   {volume}%",
+    "format-muted": "  {volume}%",
+    "max-volume": 100
+  },
+
+	"clock": {
+		"interval": 1,
+		"format": " {:%d %b %H:%M} "
+	}
+}
+
