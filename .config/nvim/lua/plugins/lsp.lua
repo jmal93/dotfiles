@@ -4,6 +4,7 @@ return {
 		opts = {},
 		keys = {
 			{ "<leader>m", "<cmd>Mason<cr>", desc = "Open Mason" },
+			{ "<leader>l", "<cmd>Lazy<cr>", desc = "Open Lazy" },
 		},
 	},
 	{

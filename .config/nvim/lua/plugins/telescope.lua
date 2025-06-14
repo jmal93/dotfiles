@@ -18,6 +18,13 @@ return {
         end,
         desc = "Find string in working directory",
       },
+      {
+        "<leader>fb",
+        function()
+          require("telescope.builtin").buffers()
+        end,
+        desc = "Find opened buffers",
+      },
     },
     config = function()
       require('telescope').setup({
