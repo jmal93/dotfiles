@@ -14,9 +14,5 @@ set -x PATH "$HOME/.local/bin:$PATH"
 
 alias sus="systemctl suspend"
 alias pwroff="systemctl poweroff"
+alias list-pkg="yay -Qqe"
 
-function find-pkg
-  yay -Q | grep "$argv"
-end
-
-abbr --add list-pkg yay -Qqe
