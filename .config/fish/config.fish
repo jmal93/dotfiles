@@ -11,8 +11,9 @@ set -x EDITOR "nvim"
 set -x PATH "$PYENV_ROOT/bin:$PATH"
 set -x PATH "$HOME/.tmuxifier/bin:$PATH"
 set -x PATH "$HOME/.local/bin:$PATH"
+set -x PATH "$HOME:/home/jao/.dotnet/tools:$PATH"
 
-alias sus="systemctl suspend"
+alias sus="systemctl suspend & hyprlock -q"
 alias pwroff="systemctl poweroff"
 alias list-pkg="yay -Qqe"
 
