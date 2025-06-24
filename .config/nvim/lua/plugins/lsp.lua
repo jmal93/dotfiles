@@ -38,6 +38,7 @@ return {
       lspconfig.jdtls.setup({})
       lspconfig.jsonls.setup({})
       lspconfig.pylsp.setup({})
+      lspconfig.csharp_ls.setup({})
       lspconfig.qmlls.setup({
 				cmd = { "/usr/lib/qt6/bin/qmlls", "-E" },
 				filetypes = { "qml" },
