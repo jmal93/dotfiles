@@ -1,4 +1,4 @@
-local tabsize = 4
+local tabsize = 2
 vim.o.tabstop = tabsize
 vim.o.softtabstop = tabsize
 vim.o.shiftwidth = tabsize
